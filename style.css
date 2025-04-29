@@ -36,7 +36,7 @@ ul.nav-links, ul.nav-links-bottom {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    position: absolute;
+    position: relative;
 }
 ul.nav-links li, ul.nav-links-bottom li {
     margin: 10px 0;
@@ -62,7 +62,6 @@ ul.nav-links li a, .nav-links-bottom a {
     font-size: 14px;
 }
 .nav-links-bottom{
-    position: absolute;
     bottom: 0;
 }
 .scroll-content{
@@ -131,11 +130,16 @@ button.share{
     width: 29px;
     height: 30px;
     display: inline-block;
-    margin-left: auto;
 }
 .profile-details h1{
     font-size: 18px;
     margin: 0;
+}
+.profilebtn{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 .profile-stats{
     display: flex;
