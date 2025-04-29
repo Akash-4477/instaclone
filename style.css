@@ -1,0 +1,342 @@
+/* Basic CSS for Flexbox layout */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    border: 1px 0 solid #ccc;
+    overflow: hidden;
+}
+.sticky-nav{
+    width: 15%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 30px 20px;
+    z-index: 1000;
+    border-right: 1px solid #ccc;
+    position: relative;
+}
+.logo-img{
+    width: 120px;
+    height: auto;
+    margin: 10px 10px;
+}
+.nav-img{
+    width: 20px;
+    height: auto;
+}
+ul.nav-links, ul.nav-links-bottom {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+ul.nav-links li, ul.nav-links-bottom li {
+    margin: 10px 0;
+    margin: 0;
+}
+ul.nav-links li.menu-item, ul.nav-links-bottom li.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+}
+ul.nav-links li.menu-item:hover, ul.nav-links-bottom li.menu-item:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+ul.nav-links li.menu-item.active, ul.nav-links-bottom li.menu-item.active {
+    background-color: #d0d0d0;
+    border-radius: 5px;
+}
+ul.nav-links li a, .nav-links-bottom a {
+    text-decoration: none;
+    color: rgb(21, 18, 18);
+    font-size: 14px;
+}
+.nav-links-bottom{
+    position: absolute;
+    bottom: 0;
+}
+.scroll-content{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto;
+    /* background-color: #f4f4f4; */
+}
+.profile-section{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 15px 10px;
+
+}
+.profile-img{
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #f3eaea;
+    display: inline-block;
+}
+h1.profileName{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    display: inline-block;
+}
+.bluetick, .instaAdd, .bio-btn{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.follow{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.message{
+    background-color: rgb(239 239 239);
+    color: #000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+button.share{
+    background-color: rgb(239 239 239);
+    color: rgb(15, 15, 15);
+    border: none;
+    padding: 4px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.threedot{
+    width: 29px;
+    height: 30px;
+    display: inline-block;
+    margin-left: auto;
+}
+.profile-details h1{
+    font-size: 18px;
+    margin: 0;
+}
+.profile-stats{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.profile-stats div{
+    text-align: center;
+}
+.stat-number{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.bio-section{
+    margin: 20px 0;
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+}
+.bio-section p{
+    margin: 0;
+    line-height: 1.5;
+}
+.highlinght{
+    color: rgb(0, 0, 0);
+}
+.threadbtn{
+    background-color: rgb(239 239 239);
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 5px 0;
+}
+.threadbtn:hover{
+    background-color: #e0e0e0;
+}
+.threadbtn:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.threadbtn:active{
+    background-color: #d0d0d0;
+}
+.threadbtn img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.bio-section a{
+    color: rgb(0, 55, 107);
+    text-decoration: none;
+    font-weight: 600;
+}
+.bio-section a:hover{
+    text-decoration: underline;
+}
+.bio-section a:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.bio-section .link{
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+.bio-section .followedby{
+    margin: 20px 0;
+    font-size: 12px;
+}
+.bio-section .followedby span{
+    color: #000;
+}
+.story-item .circle{
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    outline: 1px solid #ccc;
+    display: inline-block;
+    margin: 0 auto;
+}
+.story-item .circle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.story-item{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+}
+.timeline-story{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+}
+.postdetails {
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.postmenu{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+.postmenu .postimg{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    
+}
+.postmenu .post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 0;
+}
+.postactive{
+    border-top: 1px solid #000;
+}
+.postmenu .post p{
+    font-size: 12px;
+    margin: 0;
+    color: rgb(115, 115, 115);
+    text-transform: uppercase;
+}
+.postmenu .post p.active{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.gallery .imggallery{
+    width: 310px;
+    height: 420px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.imgfluid{
+    position: relative;
+}
+.hovereffect{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.tint{
+    background-color: #181616;
+    width: 310px;
+    height: 420px;
+    opacity: .6;
+    position: relative;
+    
+}
+.iconfluid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+}
+.hovericon{
+    height: 20px;
+    width: 20px;
+}
+.icontext{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+.hovereffect{
+    display: none;
+}
+.imgfluid:hover .hovereffect{
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
