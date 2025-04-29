@@ -14,7 +14,6 @@ body {
 }
 .sticky-nav{
     width: 15%;
-    position: sticky;
     top: 0;
     left: 0;
     color: white;
